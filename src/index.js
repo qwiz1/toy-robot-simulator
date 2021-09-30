@@ -1,10 +1,13 @@
 #!/usr/bin/env node
+const { getFormattedCommand } = require('./helpers/get-formatted-command');
 
 const runGameSimulation = () => {
-  let stdin = process.openStdin();
+  const stdin = process.openStdin();
 
   stdin.addListener('data', (data) => {
-    console.log('Your data: ' + data);
+    const command = getFormattedCommand(data);
+
+    console.log('Your command: ' + command);
   });
 };
 
