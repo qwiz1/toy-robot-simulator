@@ -2,6 +2,7 @@
 const { runCommand } = require('./commands');
 const { CARDINAL_POINTS, DEFAULT_COORDINATE, INITIAL_STEP } = require('./constants/constants');
 const { getFormattedCommand } = require('./helpers/get-formatted-command');
+const { isCommandsValid } = require('./helpers/is-commands-valid');
 const { isFirstCommandFormatValid } = require('./helpers/is-first-command-format-valid');
 
 const runGameSimulation = () => {
@@ -19,8 +20,10 @@ const runGameSimulation = () => {
       return;
     }
 
-    direction = runCommand(command, direction, coordinate);
-    step++;
+    if(isCommandsValid){
+      direction = runCommand(command, direction, coordinate);
+      step++;
+    }
 
     console.log(step);
   });
