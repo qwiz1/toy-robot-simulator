@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+const { runCommand } = require('./commands');
 const { getFormattedCommand } = require('./helpers/get-formatted-command');
 
 const runGameSimulation = () => {
@@ -6,8 +7,7 @@ const runGameSimulation = () => {
 
   stdin.addListener('data', (data) => {
     const command = getFormattedCommand(data);
-
-    console.log('Your command: ' + command);
+    console.log(runCommand(command));
   });
 };
 
