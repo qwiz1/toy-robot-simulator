@@ -7,7 +7,7 @@ const { Report } = require('../commands/report');
 const { DEFAULT_COMMANDS, VALID_PLACE_REGEX } = require('../constants/constants');
 
 const parseCommand = (input) => {
-  if (!input) {
+  if (!input || !input.toString().trim()) {
     return new Command();
   }
 
