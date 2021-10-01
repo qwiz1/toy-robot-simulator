@@ -11,7 +11,7 @@ Another way:
 
 (Assuming node.js is already installed)
 
-## commands example
+## commands
 
 PLACE X,Y,F - will put the toy robot on the table in position X[0-4], Y[0-4] and facing N (NORTH), S (SOUTH), E (EAST) or W (WEST).
 
