@@ -2,7 +2,7 @@
 Toy Robot Simulator
 
 ## installation
-You can run npm start and game will start
+Just run npm start and game will start
 
 Another way:
 1. Install globally by running npm install -g.
