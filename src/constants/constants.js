@@ -18,7 +18,7 @@ const END_BOARD_VALUE = 4;
 const DEFAULT_COORDINATE = [0, 0];
 const INITIAL_STEP = 0;
 const DEFAULT_MOVE_STEP = 1;
-const VALID_PLACE_REGEX = /PLACE\s[0-4],[0-4],[N,S,W,E]/;
+const VALID_PLACE_REGEX = /^PLACE\s[0-4],[0-4],(NORTH|SOUTH|WEST|EAST|N|S|W|E)$/;
 
 
 module.exports = {

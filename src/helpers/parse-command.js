@@ -17,7 +17,7 @@ const parseCommand = (input) => {
     if (VALID_PLACE_REGEX.test(input)) {
       const args = input.split(' ')[1];
       const [x, y, direction] = args.split(',');
-      return new Place(parseInt(x), parseInt(y), direction);
+      return new Place(parseInt(x), parseInt(y), direction[0]);
     }
 
     console.log('Unexpected command format.\nExpected PLACE <X>,<Y>,<D>');
