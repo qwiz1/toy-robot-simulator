@@ -1,5 +1,5 @@
 const { expect, it } = require('@jest/globals');
-const { parseCommand } = require('./parse-command');
+const { parseCommand } = require('../helpers/parse-command');
 const { Command } = require('../commands/command');
 const { Place } = require('../commands/place');
 const { Move } = require('../commands/move');

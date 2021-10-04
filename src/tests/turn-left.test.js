@@ -1,5 +1,5 @@
 const { expect, it } = require('@jest/globals');
-const { TurnLeft } = require('./turn-left');
+const { TurnLeft } = require('../commands/turn-left');
 const { Location } = require('../location');
 
 const turnLeft= new TurnLeft();

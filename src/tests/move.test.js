@@ -1,5 +1,5 @@
 const { expect, it } = require('@jest/globals');
-const { Move } = require('./move');
+const { Move } = require('../commands/move');
 const { Location } = require('../location');
 
 const move = new Move();

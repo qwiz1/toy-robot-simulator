@@ -1,5 +1,5 @@
 const { expect, it } = require('@jest/globals');
-const { Place } = require('./place');
+const { Place } = require('../commands/place');
 const { Location } = require('../location');
 
 describe('Report - tests: ', () => {
